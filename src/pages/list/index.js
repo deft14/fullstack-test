@@ -11,10 +11,8 @@ function ListComponent() {
   const { response, loading } = useApi(fetch);
 
   useEffect(() => {
-    if (response) {
-      setProducts(response);
-    }
-  }, [loading, response]);
+    setProducts(response);
+  }, [response]);
 
   return (
     <div>
