@@ -73,7 +73,7 @@ function ListComponent() {
           </Option>
           <Option value="Yiminghe">yiminghe</Option>
         </Select>
-        <div className="flex-row gap-10" style={{ overflow: "scroll" }}>
+        <div className="flex-row gap-10 " style={{ overflow: "scroll" }}>
           {filter.map((item, index) => (
             <div className="item" key={index}>
               {item.name}
